@@ -1,7 +1,7 @@
 from django.db import models
 
 class Author(models.Model):
-    name = models.CharField(max_length=50)
+    name = models.CharField(max_length=50,verbose_name="姓名")
     email = models.EmailField()
     bio = models.TextField()
 
